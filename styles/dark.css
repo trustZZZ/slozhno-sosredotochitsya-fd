@@ -9,4 +9,14 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --dark-theme-cover-image: url(../images/cover-image-dark.png);
+  --dark-bg-color: #000028;
+  --dark-font-color: #FF0070;
+  --dark-header-color: #DB00FF;
+  --dark-rec-visibility: block;
+  
+  --rec-visibility: var(--dark-rec-visibility);
+  --main-font-color: var(--dark-font-color);
+  --header-font-color: var(--dark-header-color);
+  --main-theme-background: var(--dark-theme-cover-image);
 }

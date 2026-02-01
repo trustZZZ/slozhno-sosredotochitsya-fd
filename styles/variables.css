@@ -3,7 +3,9 @@
   и их переопределение под различные устройства
 */
 :root {
-  --dark-theme-cover-image: url(../images/cover-image-dark.png);
-  --light-theme-cover-image: url(../images/cover-image-light.png);
-  --cover-image: url(../images/cover-image.png);
+  --main-theme-background: var(--dark-theme-cover-image);
+  --bg-color: var(--dark-bg-color);
+  --rec-visibility: var(--dark-rec-visibility);
+  --main-font-color: var(--dark-font-color);
+  --header-font-color: var(--dark-header-color);
 }
