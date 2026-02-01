@@ -3,5 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
-  
+  --dark-theme-cover-image: url(../images/cover-image-dark.png);
+  --light-theme-cover-image: url(../images/cover-image-light.png);
+  --cover-image: url(../images/cover-image.png);
 }
