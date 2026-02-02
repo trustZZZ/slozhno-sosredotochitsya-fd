@@ -3,9 +3,9 @@
   и их переопределение под различные устройства
 */
 :root {
-  --main-theme-background: var(--dark-theme-cover-image);
-  --bg-color: var(--dark-bg-color);
-  --rec-visibility: var(--dark-rec-visibility);
-  --main-font-color: var(--dark-font-color);
-  --header-font-color: var(--dark-header-color);
+  --main-theme-background: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --rec-visibility: block;
+  --main-font-color: #FF0070;
+  --header-font-color: #DB00FF;
 }

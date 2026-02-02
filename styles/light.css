@@ -9,14 +9,12 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --light-theme-cover-image: url(../images/cover-image-light.png);
-  --light-bg-color: #FFF1F7;
-  --light-font-color: #353430;;
-  --light-header-color: #FFC2E6;
-  --light-rec-visibility: none;
+
+  --bg-color: #FFF1F7;
+
   
-  --main-font-color: var(--light-font-color);
-  --header-font-color: var(--light-header-color);
-  --main-theme-background: var(--light-theme-cover-image);
-  --rec-visibility: var(--light-rec-visibility);
+  --main-font-color: #353430;
+  --header-font-color: #FFC2E6;
+  --main-theme-background: url(../images/cover-image-light.png);
+  --rec-visibility: none;
 }

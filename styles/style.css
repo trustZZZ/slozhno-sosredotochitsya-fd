@@ -12,6 +12,7 @@
 }
 
 .header {
+  position: relative;
   block-size: 1vh;
   min-block-size: 668px;
   display: grid;
