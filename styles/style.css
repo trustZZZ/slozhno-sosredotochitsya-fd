@@ -9,6 +9,7 @@
   background-attachment: fixed;
   background-color: var(--bg-color);
   position: relative;
+  /* overflow: hidden; */
 }
 
 .header {
@@ -98,7 +99,7 @@
   min-inline-size: 70px;
 }
 
-.header__text {
+.header__title {
   font-family: "IBM Plex mono", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -107,7 +108,6 @@
 
   color: var(--header-font-color);
   text-shadow: 4px 4px 0 var(--accent-color);
-
 }
 
 .header__description {
@@ -122,16 +122,80 @@
 .title-decor {
   background-color: var(--main-font-color);
   color: var(--bg-color);
+  font-size: 18px;
+}
+
+.explonation {
+  min-block-size: 948px;
+}
+
+.reasons {
+  min-block-size: 1119px;
+}
+
+.advices {
+  min-block-size: 1737px;
+}
+
+.content {
+  font-family: "IBM Plex mono", sans-serif;
+  font-style: normal;
+}
+
+.content__title {
+  color: var(--main-font-color);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+}
+
+.card__text-description {
+  color: var(--description-font-color);
+}
+
+.card__link {
+  text-shadow: 2px 2px 0 var(--main-font-color);
+}
+
+.concentrate__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--main-font-color);
+}
+
+.card__list-advices {
+  list-style: none;
+  padding: 0;
+}
+
+.item__title {
+  font-weight: normal;
+}
+
+.gallary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.card__image {
+  object-fit: contain;
+  inline-size: 100%;
+}
+
+.image-sunset {
+  
 }
 
 @media (width <= 668px) {
-  .header__text {
+  .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
 
 @media (width >= 1024px) {
-  .header__text {
+  .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
