@@ -9,12 +9,12 @@
   background-attachment: fixed;
   background-color: var(--bg-color);
   position: relative;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 .header {
   position: relative;
-  block-size: 1vh;
+  block-size: 100vh;
   min-block-size: 668px;
   display: grid;
   justify-self: auto;
@@ -28,7 +28,7 @@
   font-family: "IBM Plex mono", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: var(--main-font-color);
+  color: var(--accent-color);
   position: absolute;
   margin: 0;
   top: 10px;
@@ -43,8 +43,8 @@
   block-size: 10px;
   border-radius: 50%;
   margin: -5px -28px 0 0;
-  box-shadow: 0 0 4px 2px var(--main-font-color);
-  background-color: var(--main-font-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
   inset-inline-end: 0;
   inset-block-start: 50%;
 }
@@ -56,8 +56,8 @@
   right: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-top: 1px solid var(--main-font-color);
-  border-right: 1px solid var(--main-font-color);
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
@@ -67,8 +67,8 @@
   left: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 1px solid var(--main-font-color);
-  border-left: 1px solid var(--main-font-color);
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-list {
@@ -84,7 +84,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--main-font-color);
+  color: var(--accent-color);
   font-family: "IBM Plex mono", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -95,7 +95,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--main-font-color);
+  border: 1px solid var(--accent-color);
   min-inline-size: 70px;
 }
 
@@ -106,7 +106,7 @@
   font-size: 116px;
   line-height: 82.5%;
 
-  color: var(--header-font-color);
+  color: var(--title-font-color);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -120,8 +120,8 @@
 }
 
 .title-decor {
-  background-color: var(--main-font-color);
-  color: var(--bg-color);
+  background-color: var(--accent-color);
+  color: var(--main-font-color);
   font-size: 18px;
 }
 
@@ -143,7 +143,8 @@
 }
 
 .content__title {
-  color: var(--main-font-color);
+  color: var(--accent-color);
+  text-wrap-style: auto;
   font-size: 18px;
   font-weight: bold;
   line-height: 23px;
@@ -154,14 +155,14 @@
 }
 
 .card__link {
-  text-shadow: 2px 2px 0 var(--main-font-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .concentrate__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  color: var(--main-font-color);
+  color: var(--accent-color);
 }
 
 .card__list-advices {
@@ -184,8 +185,23 @@
   inline-size: 100%;
 }
 
-.image-sunset {
-  
+.footer {
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 116px;
+  line-height: 96px;
+  color: var(--title-font-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (width <= 668px) {

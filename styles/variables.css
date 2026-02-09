@@ -4,10 +4,9 @@
 */
 :root {
   --main-theme-background: url(../images/cover-image-dark.png);
-  --bg-color: #000028;
   --rec-visibility: block;
-  --main-font-color: #FF0070;
-  --header-font-color: #DB00FF;
+  --main-font-color: #000028;
+  --title-font-color: #DB00FF;
   --description-font-color: #F1B2CE;
   --accent-color: #ff0070;
 }
