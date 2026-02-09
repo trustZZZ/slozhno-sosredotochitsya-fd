@@ -92,6 +92,7 @@
 }
 
 .header__theme-menu-button {
+  display: block;
   color: var(--accent-color);
   font-family: "IBM Plex mono", sans-serif;
   font-weight: normal;
@@ -102,9 +103,19 @@
   border: none;
 }
 
+.header__theme-menu-button:focus-visible{
+  outline: none;
+  border-bottom: 1px var(--accent-color) solid;
+}
+
+.header__theme-menu-button:hover{
+  border-color: 1px var(--accent-color) solid;;
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
   min-inline-size: 70px;
+  pointer-events: none;
 }
 
 .header__title {
@@ -282,7 +293,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-   .advices .card {
+  .advices .card {
     grid-column: 2 / 4;
   }
 
@@ -326,7 +337,46 @@
 }
 
 @media (width >= 1024px) {
+  .header {
+    min-block-size: 768px;
+  }
+
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__theme-menu {
+    grid-column: span 3;
+    margin-top: 20px;
+    align-self: flex-start;
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header__description {
+    max-block-size: fit-content;
+    margin-right: 20px;
+  }
+
+  .main-content {
+    gap: 80px;
+  }
+
+  .reasons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: fit-content 1fr;
+  }
+
+  .reasons .content__title {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .reasons .card {
+    grid-row: 2;
   }
 }
