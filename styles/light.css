@@ -17,7 +17,7 @@
   --accent-color: #ff8dcb;
 }
 
-.header__theme-menu-button {
+/* .header__theme-menu-button {
   color: var(--main-font-color);
 }
 
@@ -37,4 +37,4 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--main-font-color);
-}
+} */
