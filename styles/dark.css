@@ -9,8 +9,11 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --dark-theme-cover-image: url(../images/cover-image-dark.png);
-  --dark-bg-color: #000028;
-  --dark-font-color: #FF0070;
-  --dark-header-color: #DB00FF;
+  --main-theme-background: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --rec-visibility: block;
+  --main-font-color: #000028;
+  --title-font-color: #db00ff;
+  --description-font-color: #f1b2ce;
+  --accent-color: #ff0070;
 }

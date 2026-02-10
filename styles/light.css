@@ -10,8 +10,10 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --main-theme-background: url(../images/cover-image-light.png);
+  --bg-color: #ffdff2;
   --rec-visibility: none;
   --main-font-color: #353430;
+  --aditional-font-color: #353430;
   --title-font-color: #ffc2e6;
   --description-font-color: #353430;
   --accent-color: #ff8dcb;
@@ -20,8 +22,10 @@
 @media (prefers-color-scheme: light) {
   :root {
     --main-theme-background: url(../images/cover-image-light.png);
+    --bg-color: #ffdff2;
     --rec-visibility: none;
     --main-font-color: #353430;
+    --aditional-font-color: #353430;
     --title-font-color: #ffc2e6;
     --description-font-color: #353430;
     --accent-color: #ff8dcb;

@@ -3,6 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--main-theme-background);
+  background-color: var(--main-theme-background);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,6 +15,7 @@
   flex-direction: column;
   gap: 40px;
   margin: 0 10px;
+  min-inline-size: fit-content;
 }
 
 .header {
@@ -52,6 +54,10 @@
   inset-block-start: 50%;
 }
 
+.decorated-zone {
+  color: var(--aditional-font-color);
+}
+
 .decorated-zone::before {
   content: "";
   position: absolute;
@@ -59,8 +65,8 @@
   right: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
 }
 
 .decorated-zone::after {
@@ -70,8 +76,8 @@
   left: 0px;
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid currentColor;
+  border-left: 1px solid currentColor;
 }
 
 .header__theme-menu {
@@ -92,7 +98,7 @@
 
 .header__theme-menu-button {
   display: block;
-  color: var(--accent-color);
+  color: var(--aditional-font-color);
   font-family: "IBM Plex mono", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -104,15 +110,15 @@
 
 .header__theme-menu-button:focus-visible{
   outline: none;
-  border-bottom: 1px var(--accent-color) solid;
+  border-bottom: 1px currentColor solid;
 }
 
 .header__theme-menu-button:hover{
-  border-color: 1px var(--accent-color) solid;;
+  border-color: 1px currentColor solid;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(currentColor);
+  border: 1px solid currentColor;
   min-inline-size: 70px;
   pointer-events: none;
 }
@@ -162,7 +168,7 @@
 }
 
 .content__title {
-  color: var(--accent-color);
+  color: var(--aditional-font-color);
   text-wrap-style: auto;
   font-size: 18px;
   font-weight: bold;
