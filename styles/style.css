@@ -97,10 +97,10 @@
 }
 
 .header__theme-menu-button {
-  display: block;
   color: var(--aditional-font-color);
   font-family: "IBM Plex mono", sans-serif;
   font-weight: normal;
+  padding: 1px 13px;
   font-style: normal;
   font-size: 18px;
   text-transform: lowercase;
@@ -108,17 +108,17 @@
   border: none;
 }
 
-.header__theme-menu-button:focus-visible{
+.header__theme-menu-button:focus-visible {
   outline: none;
   border-bottom: 1px currentColor solid;
 }
 
-.header__theme-menu-button:hover{
-  border-color: 1px currentColor solid;
+.header__theme-menu-button:hover {
+  outline: 1px var(--hover-color) solid;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid currentColor;
+  outline: 1px solid currentColor;
   min-inline-size: 70px;
   pointer-events: none;
 }
