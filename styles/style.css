@@ -309,7 +309,7 @@
 
   .explonation {
     display: grid;
-    grid-template-columns: minmax(314px, 1fr) 1fr 1fr;
+    grid-template-columns: minmax(236px, 1fr) 1fr 1fr;
     column-gap: 20px;
   }
 
