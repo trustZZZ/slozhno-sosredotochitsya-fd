@@ -249,7 +249,7 @@
   font-family: "IBM Plex Mono", monospace, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 116px;
+  font-size: var(--title-font-size);
   line-height: 96px;
   color: var(--title-font-color);
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -312,7 +312,8 @@
   .explonation {
     display: grid;
     column-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(314px, 1fr) 1fr 1fr;
+    column-gap: 20px;
   }
 
   .explonation .card {
@@ -387,24 +388,35 @@
 }
 
 @media (width >= 1024px) {
+
+  .page {
+    gap: 40px;
+  }
+
   .header {
     min-block-size: 768px;
   }
 
   .header__theme-menu {
     grid-column: span 3;
-    margin-top: 20px;
+    grid-row: 1;
     align-self: flex-start;
     justify-self: center;
+    margin: 0;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
   }
 
+  .header__title {
+    top: 43px;
+    right: 0;
+  }
+
   .header__description {
     max-block-size: fit-content;
-    margin-right: 20px;
+    margin-top: 30px;
   }
 
   .main-content {
@@ -420,6 +432,17 @@
 
   .reasons .content__title {
     grid-column: 1 / -1;
-    max-width: 649px;
+    max-width: 315px;
+  }
+
+  .gallary {
+    grid-template-rows: 260px 315px 1fr;
+  }
+
+  .footer__title {
+    top: 20px;
+    left: 1px;
+    bottom: 0;
+    align-self: center;
   }
 }
