@@ -3,7 +3,6 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--main-theme-background);
-  background-color: var(--main-theme-background);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +15,6 @@
   gap: 30px;
   margin: 0;
   padding: 10px;
-  min-inline-size: fit-content;
 }
 
 .header {
@@ -304,14 +302,13 @@
     gap: 80px;
   }
 
-  .reasons .content__title{
+  .reasons .content__title {
     justify-self: flex-start;
     max-inline-size: 20%;
   }
 
   .explonation {
     display: grid;
-    column-gap: 40px;
     grid-template-columns: minmax(314px, 1fr) 1fr 1fr;
     column-gap: 20px;
   }
