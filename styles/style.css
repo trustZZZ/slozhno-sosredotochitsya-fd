@@ -280,6 +280,7 @@
 
   .header {
     grid-template-columns: 1fr 1fr;
+    min-block-size: 984px;
   }
 
   .header__theme-menu {
@@ -290,9 +291,6 @@
 
   .header__title {
     grid-column: 1 / 3;
-    position: relative;
-    top: 115px;
-    left: -20px;
     margin: 0;
   }
 
@@ -384,6 +382,10 @@
     grid-row: 3;
   }
 
+  .footer {
+    min-block-size: 984px;
+  }
+
   .footer__title {
     margin: 0;
   }
@@ -391,8 +393,13 @@
 
 @media (width >= 1024px) {
 
+  .page {
+    padding-left: 0;
+  }
+
   .header {
-    min-block-size: 768px;
+    min-block-size: 728px;
+    max-block-size: calc(100vw - 40px);
   }
 
   .header__theme-menu {
@@ -401,6 +408,7 @@
     align-self: flex-start;
     justify-self: center;
     margin: 0;
+    margin-left: 20px;
   }
 
   .header__theme-menu-list {
@@ -408,18 +416,25 @@
   }
 
   .header__title {
-    top: 43px;
-    right: 0;
+    padding-top: 57px;
+    
+  }
+
+  .decorated-zone::after {
+    left: 20px;
   }
 
   .header__description {
     max-block-size: fit-content;
-    margin-top: 30px;
+    max-inline-size: fit-content;
+    margin-top: 58px;
+    margin-left: 11px;
   }
 
   .main-content {
     gap: 80px;
-    margin-top: 40px;
+    margin-top: 80px;
+    padding-left: 20px;
   }
 
   .reasons {
@@ -435,6 +450,12 @@
 
   .gallary {
     grid-template-rows: 260px 315px 1fr;
+  }
+
+  .footer {
+    padding-left: 20px;
+    min-block-size: 728px;
+    max-block-size: calc(100vw - 40px);
   }
 
   .footer__title {
