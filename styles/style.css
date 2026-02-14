@@ -279,12 +279,26 @@
   }
 
   .page {
-    padding: 20px 20px 20px 0;
+    padding: 0px 20px 0px 0;
   }
 
   .header {
     grid-template-columns: 1fr 1fr;
     min-block-size: 984px;
+    padding: 20px 0 20px;
+  }
+
+  .header__rec {
+    top: 20px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
   }
 
   .header__theme-menu {
@@ -308,12 +322,8 @@
     margin-left: 10px;
   }
 
-  .decorated-zone::after {
-    left: 20px;
-  }
-
   .main-content {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     gap: 80px;
     padding-left: 20px;
@@ -357,7 +367,7 @@
 
   .images {
     gap: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .gallary {
