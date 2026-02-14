@@ -12,17 +12,20 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 10px;
+  padding: 0 10px 0;
   justify-self: center;
 }
 
 .header {
   position: relative;
-  min-block-size: 648px;
-  max-block-size: calc(100vh - 40px);
+  /* min-block-size: 648px;
+  max-block-size: calc(100vh - 40px); */
+  block-size: 100vh;
+  min-block-size: 668px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
+  padding: 10px 0 10px;
 }
 
 .header__rec {
@@ -34,8 +37,8 @@
   font-weight: normal;
   color: var(--accent-color);
   position: absolute;
-  top: 0.1rem;
-  right: 1.8rem;
+  top: 10px;
+  right: 28px;
   block-size: fit-content;
 }
 
@@ -59,7 +62,7 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 0;
   inline-size: 25px;
   block-size: 25px;
@@ -70,7 +73,7 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   left: 0;
   inline-size: 25px;
   block-size: 25px;
@@ -152,7 +155,7 @@
 }
 
 .main-content {
-  margin-top: 51px;
+  margin-top: 41px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -228,7 +231,7 @@
 
 .images {
   gap: 10px;
-  margin-bottom: 52px;
+  margin-bottom: 42px;
 }
 
 .gallary {
@@ -247,8 +250,8 @@
 
 .footer {
   position: relative;
-  min-block-size: 648px;
-  max-block-size: calc(100vh - 40px);
+  min-block-size: 668px;
+  block-size: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
