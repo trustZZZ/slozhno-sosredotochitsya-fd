@@ -282,7 +282,6 @@
 
   .header {
     grid-template-columns: 1fr 1fr;
-    min-block-size: 984px;
     padding: 20px 0 20px;
   }
 
@@ -403,7 +402,6 @@
   }
 
   .footer {
-    min-block-size: 984px;
     padding-left: 20px;
   }
 
@@ -413,10 +411,6 @@
 }
 
 @media (width >= 1024px) {
-
-  .header {
-    block-size: 100vh;
-  }
 
   .header__theme-menu {
     grid-column: span 3;
@@ -463,10 +457,6 @@
 
   .gallary {
     grid-template-rows: 260px 315px 1fr;
-  }
-
-  .footer {
-    block-size: 100vh;
   }
 
   .footer__title {
